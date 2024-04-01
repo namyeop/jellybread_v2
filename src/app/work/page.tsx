@@ -137,9 +137,8 @@ function Clients() {
 }
 
 export const metadata: Metadata = {
-  title: 'Our Work',
-  description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+  title: '예약하기',
+  description: '예약하기',
 }
 
 export default async function Work() {
@@ -148,29 +147,13 @@ export default async function Work() {
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        eyebrow="예약하기"
+        title="아래 숙소에서 댕냥이를 만나볼 수 있어요"
       >
-        <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
-        </p>
+        <p>댕냥이는 예약제로 운영되며, 방문 시간을 예약하셔야 합니다.</p>
       </PageIntro>
 
       <CaseStudies caseStudies={caseStudies} />
-
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
-      >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
-      </Testimonial>
-
-      <Clients />
-
-      <ContactSection />
     </>
   )
 }

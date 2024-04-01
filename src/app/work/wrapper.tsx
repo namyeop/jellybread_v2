@@ -33,19 +33,11 @@ export default async function CaseStudyLayout({
                 <div className="mx-auto max-w-5xl">
                   <dl className="-mx-6 grid grid-cols-1 text-sm text-neutral-950 sm:mx-0 sm:grid-cols-3">
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
-                      <dt className="font-semibold">Client</dt>
+                      <dt className="font-semibold">숙소</dt>
                       <dd>{caseStudy.client}</dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
-                      <dt className="font-semibold">Year</dt>
-                      <dd>
-                        <time dateTime={caseStudy.date.split('-')[0]}>
-                          {caseStudy.date.split('-')[0]}
-                        </time>
-                      </dd>
-                    </div>
-                    <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
-                      <dt className="font-semibold">Service</dt>
+                      <dt className="font-semibold">주인</dt>
                       <dd>{caseStudy.service}</dd>
                     </div>
                   </dl>
@@ -81,8 +73,6 @@ export default async function CaseStudyLayout({
           pages={moreCaseStudies}
         />
       )}
-
-      <ContactSection />
     </>
   )
 }

@@ -65,7 +65,7 @@ export function Logo({
           filled={filled}
         />
       </svg>
-      Jelly Bread
+      Casthouse
     </div>
   )
 }

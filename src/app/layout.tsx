@@ -6,8 +6,8 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '유기동물 입양, Jelly Bread',
-    default: 'Jelly Bread',
+    template: '유기동물 입양, Casthouse',
+    default: 'Casthouse',
   },
 }
 
